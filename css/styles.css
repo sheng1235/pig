@@ -1,0 +1,111 @@
+body {
+  background-color: rgb(121, 180, 190);
+  background-image: url("../css/jpeg.jfif");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+h1 {
+  color: rgb(212, 77, 14);
+  font-size: 300%;
+  text-align: center;
+  border: 20px solid Tomato;
+}
+p {
+  text-align: center;
+}
+
+.p1 {
+  font-size: 500%;
+  color: rgb(126, 48, 136);
+}
+
+.p2 {
+  color: rgb(49, 179, 23);
+  font-size: 200%;
+}
+
+.note {
+  color: brown;
+  font-size: 120%;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  float: right;
+}
+
+/* Style the header */
+header {
+  background-color: darkgrey;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(187, 47, 47);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  /* height: 300px; */
+  background: rgb(89, 141, 185);
+  /* padding: 20px; */
+}
+
+/* Style the list inside the menu */
+/* nav ul {
+  list-style-type: none;
+  padding: 0;
+} */
+.side {
+  flex: 30%;
+  flex-direction: column;
+}
+
+.side > .side_img {
+  flex: 80%;
+}
+
+.side > .side_statements {
+  flex: 20%;
+  background-color: beige;
+  padding: 0;
+}
+.article {
+  flex: 70%;
+  font-size: 1vw;
+  background-color: aquamarine;
+}
+article {
+  float: left;
+  width: 70%;
+  background-color: rgb(148, 120, 60);
+  /* height: 300px; */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(65, 68, 66);
+  padding: 10px;
+  text-align: center;
+  color: rgb(211, 187, 187);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
